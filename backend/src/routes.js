@@ -9,6 +9,8 @@ const routes = express.Router();
 routes.get('/ongs', ONGController.index);
 //Cadastrar as ONGS
 routes.post('/ongs', ONGController.create);
+//Alterar o pais de uma ong especificada
+routes.put('/ongs', ONGController.change);
 
 //Cadastrat incidentes
 routes.post('/incidents', IncidentController.create);
